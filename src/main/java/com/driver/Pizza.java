@@ -26,7 +26,7 @@ public class Pizza {
       this.containsTopping=false;
       this.bagAdded=false;
       this.finalPrice=false;
-       setBill("Base Price Of the Pizza: "+this.price+"\n"); 
+       setBill("Base Price Of The Pizza: "+this.price+"\n"); 
 
     }
 
