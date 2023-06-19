@@ -8,6 +8,7 @@ public class Pizza {
     private Boolean containsCheese;
     private Boolean containsTopping;
     private Boolean bagAdded;
+    public Boolean finalPrice;
 
     
     public Pizza(Boolean isVeg){
@@ -24,6 +25,7 @@ public class Pizza {
       this.containsCheese=false;
       this.containsTopping=false;
       this.bagAdded=false;
+      this.finalPrice=false;
        setBill("Base Price of the Pizza: "+this.price+"\n"); 
 
     }
@@ -93,7 +95,10 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-      
+       if(this.finalPrice){
+        this.bill+="Total Price: "+this.price+"\n";
+        this.finalPrice=false;
+       }
         return this.bill;
     }
     public void totalBill(){
