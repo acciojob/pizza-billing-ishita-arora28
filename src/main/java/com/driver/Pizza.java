@@ -26,7 +26,7 @@ public class Pizza {
       this.containsTopping=false;
       this.bagAdded=false;
       this.finalPrice=false;
-       setBill("Base Price of the Pizza: "+this.price+"\n"); 
+       setBill("Base Price Of the Pizza: "+this.price+"\n"); 
 
     }
 
@@ -86,7 +86,7 @@ public class Pizza {
         
         if(!bagAdded){
             this.price+=20; 
-          setBill(getBill()+"Paper Bag Added: "+20+"\n"); 
+          setBill(getBill()+"Paperbag Added: "+20+"\n"); 
             
           this.bagAdded=true;
         }
